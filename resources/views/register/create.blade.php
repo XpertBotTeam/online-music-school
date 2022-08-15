@@ -18,17 +18,49 @@
                 @csrf
 
                 <div class="mb-6  mt-5">
-                    <label for="name" class="block mb-2 uppercase font-bold text-xs text-gray-700">
-                        Name
+                    <label for="first_name" class="block mb-2 uppercase font-bold text-xs text-gray-700">
+                        First Name
                     </label>
                     <input class="border border-gray-400 p-2 w-full rounded"
                     type="text"
-                    name="name"
-                    id="name"
-                    value="{{ old('name') }}"
+                    name="first_name"
+                    id="first_name"
+                    value="{{ old('first_name') }}"
                     required
                     >
-                    @error('name')
+                    @error('first_name')
+                        <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
+                    @enderror
+
+                </div>
+                <div class="mb-6  mt-5">
+                    <label for="last_name" class="block mb-2 uppercase font-bold text-xs text-gray-700">
+                        Last Name
+                    </label>
+                    <input class="border border-gray-400 p-2 w-full rounded"
+                    type="text"
+                    name="last_name"
+                    id="last_name"
+                    value="{{ old('lastname') }}"
+                    required
+                    >
+                    @error('last_name')
+                        <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
+                    @enderror
+
+                </div>
+                <div class="mb-6  mt-5">
+                    <label for="username" class="block mb-2 uppercase font-bold text-xs text-gray-700">
+                        UserName
+                    </label>
+                    <input class="border border-gray-400 p-2 w-full rounded"
+                    type="text"
+                    name="username"
+                    id="username"
+                    value="{{ old('username') }}"
+                    required
+                    >
+                    @error('username')
                         <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
                     @enderror
 
