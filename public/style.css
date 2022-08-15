@@ -27,19 +27,30 @@ body{
 }
 .navbar .logo{
     text-transform: capitalize;
-    font-size: 1.9rem;
+    font-size: 1.5rem;
 }
 .navbar .logo i{
     color: aliceblue;
 }
 .navbar-nav li{
-    padding-right:.7rem;
+    padding-right:.5rem;
+
 
 }
 .navbar-dark .navbar-nav .nav-link{
     color:white;
     padding-top:.8rem;
     transition: .2s;
+    font-size: 0.7rem;
+}
+.navbar-dark .navbar-nav button {
+
+    border-radius: .7rem;
+    border: solid  #1ebba3;
+    background:none;
+    padding:0rem 0rem;
+    margin-right: .5rem;
+    font-size: 1.2rem;
 }
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover{
@@ -201,7 +212,7 @@ footer{
     background-color: #40474e;
     color:white;
     padding:2rem 0 2rem;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
 
 }
 

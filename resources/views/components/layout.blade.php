@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,40 +34,30 @@
                     <li class="nav-item"><a href="#course" class="nav-link">Course</a></li>
                     <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
                     <li class="nav-item"><a href="#resources" class="nav-link">Resources</a></li>
-                    <button><a href="/login" class="nav-link">login</a></button>
-                    <button><a href="/register" class="nav-link">Register Now</a></button>
-
+                    <li class="nav-item"><a href="#clients" class="nav-link">Clients</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </div>
 
-    <div class="landing">
-        <div class="home-wrap">
-            <div class="home-inner w-100">
-            </div>
-        </div>
-    </div>
-    <div class="caption text-center">
-        <h1>Welcome to Aoudak Rannan </h1>
-        <h3>A.R is a great platform to learn music from scratch</h3>
-        <a class="btn btn-outline-light btn-lg" href="/register">Get started</a>
-    </div>
-
+    {{ $slot }}
 
 
 
     <footer>
         <div class="row justify-content-center">
             <div class="col-md-5 text-center ">
+                <h2></h2>
+                <p> at our  core is a colection of design and developement solutions that present evrything your buisiness needs to complete in the modern marketplace</p>
                 <strong>Contact info</strong>
-                <p>+96171401080<br>omarelhajjjobs@gmail.com </p>
+                <p>(888)(888)7140180<br>email@gmail.com </p>
                 <a href="#"> <i class="fab fa-facebook-square"></i></a>
                 <a href="#"> <i class="fab fa-twitter-square"></i></a>
                 <a href="#"> <i class="fab fa-instagram"></i></a>
             </div>
             <hr class="socket">
-            &copy; Aoudak rannan team.
+            &copy; Nuno theme.
         </div>
     </footer>
 
@@ -76,6 +65,3 @@
 
 
 </html>
-
-
-
