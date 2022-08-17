@@ -25,7 +25,7 @@
                         name="email" id="email" value="{{ old('email') }}"
                         class="border border-gray-400 p-2 w-full rounded" required>
                     @error('email')
-                        {{ $message }}
+                        <p class="text-xs text-red-500 mt-1">{{ $message }}</p>
                     @enderror
                 </div>
 
@@ -34,10 +34,10 @@
                         Password
                     </label>
                     <input type="password"
-                        name="password" id="password" value="{{ old('passwod') }}"
+                        name="password" id="password"
                         class="border border-gray-400 p-2 w-full rounded" required>
                     @error('password')
-                        {{ $message }}
+                        <p class="text-xs text-red-500 mt-1">{{ $message }}</p>
                     @enderror
                 </div>
                 <div class="mb-6">

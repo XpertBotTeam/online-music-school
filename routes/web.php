@@ -19,7 +19,10 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('register',[RegisterController::class , 'create']);
-Route::post('register',[RegisterController::class , 'store']);
+Route::get('register',[RegisterController::class , 'create'])->middleware('guest');
+Route::post('register',[RegisterController::class , 'store'])->middleware('guest');
 
-Route::get('login' , [SessionsController::class , 'create']);
+Route::get('login' , [SessionsController::class , 'create'])->middleware('guest');
+Route::Post('login' , [SessionsController::class , 'store'])->middleware('guest');
+
+Route::post('logout' , [SessionsController::class , 'destroy'])->middleware('auth');
