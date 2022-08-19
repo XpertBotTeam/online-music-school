@@ -14,11 +14,6 @@ class SessionsController extends Controller
         return view('sessions.create');
     }
 
-    public function destroy(){
-        auth()->logout();
-        return redirect('/')->with('success', 'Goodbye');
-    }
-
     public function store(){
         $attributes = request()->validate([
             'email' => 'required|exists:users,email',
@@ -29,7 +24,7 @@ class SessionsController extends Controller
         //auth succeed
         // if(auth()->attempt($attributes)){
         if (auth()->attempt($attributes)) {
-            ddd('w err');
+            ddd('you are here');
             return redirect('/')->with('success', 'Welcome back!');
         }
         //     return redirect('/')->with('success' , 'Welcome back!');
@@ -40,5 +35,10 @@ class SessionsController extends Controller
             'email' =>'Your provided credentials could not be verified'
         ]);
 
+    }
+    public function destroy()
+    {
+        auth()->logout();
+        return redirect('/')->with('success', 'Goodbye');
     }
 }
