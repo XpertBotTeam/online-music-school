@@ -22,8 +22,11 @@
                         Email
                     </label>
                     <input type="email"
-                        name="email" id="email" value="{{ old('email') }}"
-                        class="border border-gray-400 p-2 w-full rounded" required>
+                            name="email"
+                            id="email"
+                            value="{{ old('email') }}"
+                            class="border border-gray-400 p-2 w-full rounded"
+                            required >
                     @error('email')
                         <p class="text-xs text-red-500 mt-1">{{ $message }}</p>
                     @enderror
@@ -33,9 +36,12 @@
                     <label for="password" class="block mb-2 uppercase font-bold text-xs text-gray-700">
                         Password
                     </label>
+
                     <input type="password"
-                        name="password" id="password"
-                        class="border border-gray-400 p-2 w-full rounded" required>
+                            name="password"
+                            id="password"
+                            class="border border-gray-400 p-2 w-full rounded"
+                            required >
                     @error('password')
                         <p class="text-xs text-red-500 mt-1">{{ $message }}</p>
                     @enderror

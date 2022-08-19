@@ -19,6 +19,10 @@ class User extends Authenticatable
      */
     protected $guarded=[];
 
+    public function setPasswordAttribute($password){
+        $this->attributes['password'] =bcrypt($password);
+    }
+
     /**
      * The attributes that should be hidden for serialization.
      *
